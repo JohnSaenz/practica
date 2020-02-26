@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mejores Practicas | CINDEHU | CSS Grid filas </title>
+    <style>
+        body{
+            font-family:Arial;
+            font-size: 16px;
+            color: black
+        }
+       
+       .container
+       {
+         display: grid;
+         grid-gap: 5px;
+         height: 100vh;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(4, 1fr);
+         align-items: stretch;
+       
+       }
+
+       .item{
+           background: lightcyan;
+           background: lightblue;
+          padding: 10px; 
+          border: 1px solid black;
+       }
+
+       .item:nth-of-type(5)
+{
+    align-self: start;
+    justify-self: stretch;
+}
+    </style>
+</head>
+<body>
+    <!--INICIO-->
+<section class="container">
+<div class="item">contendido #1</div>
+<div class="item">contendido #2</div>7
+    <div class="items">subitem #1</div>
+    <div class="items">subitem #2</div>
+    <div class="items">subitem #3</div>
+    <div class="items">subitem #4</div>
+    <div class="items">subitem #5</div>
+</div>
+<div class="item">contendido #5</div>
+<div class="item">contendido #6</div>
+<div class="item">contendido #7</div>
+<div class="item">contendido #8</div>
+<div class="item">contendido #9</div>
+<div class="item">contendido #10</div>
+<div class="item">contendido #11</div>
+<div class="item">contendido #12</div>
+</section>
+
+    
+</body>2
+</html>
